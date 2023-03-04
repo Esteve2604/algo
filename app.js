@@ -42,9 +42,4 @@ app.post('/doLogin.jsp', (req, res) => {
   console.log(`Username: ${username}, Password: ${password}`);
   // add your authentication logic here
 });
-
-// start the server
-app.listen(3000, () => {
-  console.log('Server started on port 3000');
-});
 module.exports = app
