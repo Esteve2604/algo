@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const bodyParser= require('body-parser')
 const nodemailer = require('nodemailer');
 app.use(bodyParser.urlencoded({ extended: true }));
 // parse incoming requests with JSON payloads
@@ -46,3 +47,4 @@ app.post('/doLogin.jsp', (req, res) => {
 app.listen(3000, () => {
   console.log('Server started on port 3000');
 });
+module.exports = app
